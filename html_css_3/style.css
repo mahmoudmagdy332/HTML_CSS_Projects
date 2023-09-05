@@ -1,0 +1,86 @@
+.container{
+    width: 80%;
+    background-color: #edecec;
+    margin: 20px auto;
+    padding: 5px;
+}
+.quiz{
+    width: 95%;
+    margin: 20px auto;
+}
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   background-color: white;
+}
+.header h3{
+    margin: 20px 10px;
+}
+.header span{
+    color: red;
+}
+.question{
+    background-color: white;
+    margin-top: 10px;
+    padding: 20px;
+}
+.question .qw p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 0;
+}
+.answer{
+    width: 97%;
+    background-color: #edecec;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.choise{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(197, 197, 197);
+    font-size: 20px;
+}
+.choise input{
+    margin-right: 10px;
+}
+input[type=submit]{
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(3, 146, 198);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}
+.footer{
+    width: 100%;
+    height: 20px;
+    background-color:  #edecec;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    padding-top: 20px;
+}
+.footer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+
+}
+.ans{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color:white;
+    margin: 5px;
+}
+ul .active{
+    background-color:rgb(3, 146, 198);
+}
