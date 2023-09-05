@@ -1,0 +1,244 @@
+.container{
+    width: 80%;
+    margin: 5px auto;
+    position: relative;
+    background-color: #63b94b58;
+}
+.game-Info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid #f8f8f8;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.game{
+    background-color:#f8f8f8 ;
+    width: 100%;
+    height: 393px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Gallows{
+    display: flex;
+    position: relative;
+    width: 40%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.base{
+    position: absolute;
+    background-color:black;
+    width: 80px;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+.pole1{
+    position: absolute;
+    background-color:black;
+    width: 3px;
+    height: 300px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+.crossbar{
+    position: absolute;
+    background-color:black;
+    width: 120px;
+    height: 3px;
+    bottom: 280px;
+    left: 50%;
+    display: none;
+  
+}
+
+.pole2{
+    position: absolute;
+    background-color:black;
+    width: 3px;
+    height: 40px;
+    bottom: 240px;
+    left: 50%;
+    transform: translateX(117px);
+    display: none;
+}
+
+.Gallows-circle{
+    position: absolute;
+    border: 3px dotted black;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    bottom: 174px;
+    left: 50%;
+    transform:  translateX(86px);
+    display: none;
+}
+
+.human-head{
+    position: absolute;
+    border: 3px solid black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    bottom: 183px;
+    left: 50%;
+    transform: translateX(97px);
+    display: none;
+}
+.human-body{
+    position: absolute;
+    background-color: black;
+    width: 3px;
+    height: 100px;
+    bottom: 83px;
+    left: 50%;
+    transform: translateX(120px); 
+    display: none;
+}
+.human-hand{
+    position: absolute;
+    background-color: black;
+    width: 3px;
+    height: 30px;
+    bottom: 42px;
+   
+    
+}
+.hand-left{
+    transform: rotate(45deg)translate(185px,0px);
+    left: 50%;
+    bottom: 268px;
+    display: none;
+}
+.hand-reight{
+    transform: rotate(-45deg)translate(144px,10px);
+    left: 50%;
+    display: none;
+}
+
+
+.human-leg{
+    position: absolute;
+    background-color: black;
+    width: 3px;
+    height: 45px;
+    bottom: 46px;
+    
+}
+.leg-left{
+  
+    transform: rotate(-45deg)translate(22px,170px);
+    left: 50%;
+    bottom: 150px;
+    display: none;
+}
+.leg-reight{
+    transform: rotate(45deg)translate(148px,0px);
+    left: 50%;
+    bottom: 150px;
+    display: none;
+   
+
+}
+.words{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.answer{
+  align-self: center;
+}
+.answer ul{
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    height:100px ;
+    justify-content: center;
+    align-items: center;
+    padding:0 30px ;
+}
+.answer ul li{
+    background-color: rgb(34, 151, 151);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+    text-align: center;
+   
+}
+.letters{
+    
+    display: grid;
+    grid-template-columns: repeat(7,30px);
+    grid-template-rows: repeat(4,30px);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    grid-gap: 10px;
+    margin: 20px;
+    padding: 30px;
+    background-color: white;
+}
+.letter{
+    background-color: rgb(34, 151, 151);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+
+
+.popup{
+    position: absolute;
+    width:60% ;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding-top: 70px;
+}
+
+.popup-sucssess{
+    background-color: rgb(80, 161, 184);
+    transform: translate(-50%,-50%) scale(0,0);
+    transition: .5s;
+}
+
+.popup-fail{
+    background-color: rgb(245, 89, 89);
+    transform: translate(-50%,-50%) scale(0,0);
+    transition: .5s;
+}
+.clicked{
+    background-color: rgb(1, 13, 13);
+    opacity: .2;
+    pointer-events: none;
+    color: black;
+}
